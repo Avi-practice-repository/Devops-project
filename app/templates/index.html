@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreshMart Grocery Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">FreshMart</h2>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Offers</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Fresh Groceries Delivered Fast</h1>
+                <p>
+                    Buy fresh fruits, vegetables, dairy products and daily essentials
+                    from FreshMart Grocery Store.
+                </p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="products" id="products">
+        <h2>Our Popular Products</h2>
+
+        <div class="product-container">
+            <div class="card">
+                <div class="icon">🍎</div>
+                <h3>Fresh Fruits</h3>
+                <p>Apples, bananas, oranges and seasonal fruits.</p>
+                <span>Starting ₹99</span>
+            </div>
+
+            <div class="card">
+                <div class="icon">🥦</div>
+                <h3>Vegetables</h3>
+                <p>Fresh green vegetables directly from farms.</p>
+                <span>Starting ₹49</span>
+            </div>
+
+            <div class="card">
+                <div class="icon">🥛</div>
+                <h3>Dairy Products</h3>
+                <p>Milk, curd, paneer, butter and cheese.</p>
+                <span>Starting ₹35</span>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛒</div>
+                <h3>Daily Essentials</h3>
+                <p>Rice, dal, oil, sugar, snacks and more.</p>
+                <span>Best Offers</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer">
+        <h2>Special Offer</h2>
+        <p>Get 20% discount on your first grocery order.</p>
+        <a href="/health" class="btn dark">Check App Health</a>
+    </section>
+
+    <footer>
+        <p>© 2026 FreshMart Grocery Store | DevOps Project</p>
+    </footer>
+
+</body>
+</html>

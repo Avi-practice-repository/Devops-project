@@ -1,0 +1,23 @@
+
+#this file is to ignore the following to upload on github
+
+# Python
+__pycache__/
+*.pyc
+
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+
+# SSH keys
+*.pem
+*.key
+
+# Environment files
+.env
+
+# VS Code
+.vscode/

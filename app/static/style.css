@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7fff7;
+    color: #222;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 80, 40, 0.7), rgba(0, 80, 40, 0.7)),
+                url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d4ff5f;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: #d4ff5f;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    padding: 0 8%;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4ff5f;
+    color: #123;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #b9ee3f;
+}
+
+.products {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: #176b35;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #176b35;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card span {
+    font-weight: bold;
+    color: #ff7b00;
+}
+
+.offer {
+    background: #176b35;
+    color: white;
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.offer h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.offer p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.dark {
+    background: white;
+    color: #176b35;
+}
+
+footer {
+    background: #102d1b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
