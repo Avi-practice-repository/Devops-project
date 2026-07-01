@@ -10,6 +10,8 @@ FreshMart Grocery Store
 
 ## Tools Used
 
+## Tools Used
+
 - Python Flask for web application
 - HTML and CSS for frontend design
 - Docker for containerization
@@ -17,6 +19,8 @@ FreshMart Grocery Store
 - Ansible for server configuration and deployment
 - AWS EC2 for hosting
 - Git for version control
+- GitHub for storing project code
+- GitLab for repository integration and CI/CD pipeline
 - Linux as server environment
 
 ## Project Flow
@@ -31,6 +35,10 @@ FreshMart Grocery Store
 8. Built Docker image on EC2.
 9. Ran the application container on EC2.
 10. Accessed the website using EC2 public IP.
+11. Pushed the project code to GitHub.
+12. Integrated GitLab by adding the same project repository on GitLab.
+13. Added GitLab CI/CD using `.gitlab-ci.yml`.
+14. Created a pipeline to check the Python Flask app and build the Docker image.
 
 ## Application URL
 
