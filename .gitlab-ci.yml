@@ -9,7 +9,7 @@ check_python_app:
     - echo "Checking Flask application"
     - pip install -r app/requirements.txt
     - python -m py_compile app/app.py
-    - echo "Python check completed"
+    - echo "Python application check completed"
 
 build_docker_image:
   stage: build
@@ -17,6 +17,6 @@ build_docker_image:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
   script:
-    - echo "Building Docker image using Dockerfile"
+    - echo "Building Docker image"
     - /kaniko/executor --context "$CI_PROJECT_DIR" --dockerfile "$CI_PROJECT_DIR/Dockerfile" --no-push
     - echo "Docker image build completed"
